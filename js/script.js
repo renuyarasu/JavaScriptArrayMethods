@@ -29,8 +29,8 @@ const characters = [
   },
 ];
 
-// FILTER
 /*
+// FILTER
 
 const gtcharacters100 = characters.filter(
     (character) => character.mass > 100
@@ -54,8 +54,9 @@ console.log(filterFemale);
 
 */
 
-// MAP
 /*
+// MAP
+
 const names = characters.map((character) => character.name)
 console.log(names);
 
@@ -75,6 +76,7 @@ const lNames = characters.map((character) => character.name.split(" ")[1]);
 console.log(lNames);
 */
 
+/*
 // SOME
 
 // Is there at least one male character?
@@ -89,4 +91,51 @@ console.log(oneTallerThan210);
 // Is there at least one character that has mass less than 50?
 const oneMassLessThan50 = characters.some((character) => character.mass < 50)
 console.log(oneMassLessThan50);
+*/
 
+/*
+// SORT
+
+// Sort by name
+const byName = characters.sort((a,b) => {
+    if(a.name < b.name) return 1;
+    return -1;
+})
+
+console.log(byName);
+// Sort by mass
+const byMass = characters.sort((a,b) => a.mass - b.mass);
+console.log(byMass);
+
+// Sort by height
+const byHeight = characters.sort((a,b) => a.height - b.height);
+console.log(byHeight);
+// Sort by gender
+const byGender = characters.sort((a,b) => {
+    if(a.gender === 'female') return 1;
+    return -1;
+})
+console.log(byGender);
+*/
+
+// REDUCE
+// Get the total mass of all characters
+const totalMass = characters.reduce((acc, cur) => acc + cur.mass, 0);
+console.log(totalMass);
+// Get the total height of all characters
+const totalHeight =  characters.reduce((acc, cur) => acc + cur.height, 0);
+console.log(totalHeight);
+// Get the total number of characters in all the character names
+const totalNameCharacters = characters.reduce((acc, cur) => acc + cur.name.length, 0);
+console.log(totalNameCharacters);
+// Get the total number of characters by eye color (hint. a map of eye color to count
+const CharacterByEyeColor = characters.reduce((acc, cur) => {
+    const color = cur.eye_color;
+   if (acc[color]) {
+    acc[color]++
+   } else {
+    acc[color] = 1;
+   }
+   return acc;
+}, {}); 
+console.log(CharacterByEyeColor);
