@@ -67,7 +67,12 @@ const minifiedRecords = characters.map((character) => ({
     name: character.name,
     height: character.height
 }));
-console.log(minifiedRecords);
+// console.log(minifiedRecords);
+
+const fNames = characters.map((character) => character.name.split(" ") [0]);
+// console.log(fNames);
+const lNames = characters.map((character) => character.name.split(" ")[1]);
+console.log(lNames);
 
 
 
