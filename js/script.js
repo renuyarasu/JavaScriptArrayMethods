@@ -117,7 +117,7 @@ const byGender = characters.sort((a,b) => {
 })
 console.log(byGender);
 */
-
+/*
 // REDUCE
 // Get the total mass of all characters
 const totalMass = characters.reduce((acc, cur) => acc + cur.mass, 0);
@@ -139,3 +139,18 @@ const CharacterByEyeColor = characters.reduce((acc, cur) => {
    return acc;
 }, {}); 
 console.log(CharacterByEyeColor);
+*/
+
+// EVERY
+// Does every character have blue eyes?
+const allBlueEyes = characters.every((character) => character.eye_color === 'blue');
+console.log(allBlueEyes);
+// Does every character have mass more than 40?
+const massMoreThan40 = characters.every((character) => character.mass > 40);
+console.log(massMoreThan40); 
+// Is every character shorter than 200?
+const shorterThen200 = characters.every((character) => character.height < 200);
+console.log(shorterThen200);
+// Is every character male
+const allMale = characters.every((character) => character.gender === 'male');
+console.log(allMale);
