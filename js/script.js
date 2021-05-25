@@ -61,18 +61,32 @@ console.log(names);
 
 const heights = characters.map((character) => character.height);
 console.log(heights);
-*/
 
 const minifiedRecords = characters.map((character) => ({
     name: character.name,
     height: character.height
 }));
-// console.log(minifiedRecords);
+console.log(minifiedRecords);
 
 const fNames = characters.map((character) => character.name.split(" ") [0]);
-// console.log(fNames);
+console.log(fNames);
+
 const lNames = characters.map((character) => character.name.split(" ")[1]);
 console.log(lNames);
+*/
 
+// SOME
 
+// Is there at least one male character?
+const oneMale = characters.some((character) => character.gender === 'male')
+console.log(oneMale);
+// Is there at least one character with blue eyes?
+const oneBlueEyes = characters.some((character) => character.eye_color === 'blue')
+console.log(oneBlueEyes);
+// Is there at least one character taller than 210?
+const oneTallerThan210 = characters.some((character) => character.height > 210)
+console.log(oneTallerThan210);
+// Is there at least one character that has mass less than 50?
+const oneMassLessThan50 = characters.some((character) => character.mass < 50)
+console.log(oneMassLessThan50);
 
