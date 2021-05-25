@@ -34,3 +34,8 @@ const gtcharacters100 = characters.filter(
     (character) => character.mass > 100
     );
 console.log(gtcharacters100);
+
+const shortcharacters200 = characters.filter(
+    (character) => character.height > 200
+)
+console.log(shortcharacters200);
