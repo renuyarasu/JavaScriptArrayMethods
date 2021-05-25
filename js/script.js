@@ -33,9 +33,20 @@ const characters = [
 const gtcharacters100 = characters.filter(
     (character) => character.mass > 100
     );
-console.log(gtcharacters100);
+// console.log(gtcharacters100);
 
 const shortcharacters200 = characters.filter(
-    (character) => character.height > 200
+    (character) => character.height < 200
 )
-console.log(shortcharacters200);
+// console.log(shortcharacters200);
+
+const filterMale = characters.filter(
+    (character) => character.gender === 'male'
+)
+console.log(filterMale);
+
+const filterFemale = characters.filter(
+    (character) => character.gender === 'female'
+)
+console.log(filterFemale);
+
