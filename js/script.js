@@ -1,4 +1,4 @@
-// Javascript Array Methods List
+// initial commit Array Methods List
   // concat()
   // copyWithIn()
   // entries()
@@ -28,4 +28,3 @@
   // toString()
   // values()
 
-  
