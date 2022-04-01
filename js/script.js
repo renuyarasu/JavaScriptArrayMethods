@@ -29,18 +29,11 @@ console.clear();
 // toString()
 // values()
 
-// 4 ways to check if 'arrays' are equal
+// Array Destructuring
 
-const oldNums = [1, 2, 3];
-const newNums = [1, 2, 3];
+// Assign array items to variable
 
-//Method 04: using .length ()
-
-function arrayEquals(oldNums, newNums) {
-  return Array.isArray(oldNums) &&
-    Array.isArray(newNums) &&
-    oldNums.length === newNums.length &&
-    oldNums.every((value, index) => value === newNums[index]);
-}
-
-console.log(arrayEquals(oldNums, newNums));// true
+const [x, y, z] = ['Hello!', 123, true];
+console.log(x); // Hello!
+console.log(y); // 123
+console.log(z); // true
