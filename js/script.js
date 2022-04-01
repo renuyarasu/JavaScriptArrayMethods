@@ -30,7 +30,7 @@ console.clear();
 // values()
 
 const result = [1, 2, 3, 4];
-result.shift();
-console.log(result); //[ 2, 3, 4 ]
+result.unshift(0);
+console.log(result); // [ 0, 1, 2, 3, 4 ]
 
 
