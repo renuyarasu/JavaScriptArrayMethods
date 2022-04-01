@@ -29,8 +29,8 @@ console.clear();
 // toString()
 // values()
 
-const result = [1, 2, 3, 4];
-result.unshift(0);
-console.log(result); // [ 0, 1, 2, 3, 4 ]
+const myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const result = myArray.find(num => num % 2 === 0);
+console.log(result); // 2
 
 
