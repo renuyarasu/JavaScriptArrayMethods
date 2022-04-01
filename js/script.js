@@ -30,7 +30,7 @@ console.clear();
 // values()
 
 const myArray = ['x', 'y', 'z'];
-const result = myArray.concat('a');
-console.log(result); //  [ 'x', 'y', 'z', 'a' ]
+const result = myArray.join('-');
+console.log(result); //  x-y-z
 
 
