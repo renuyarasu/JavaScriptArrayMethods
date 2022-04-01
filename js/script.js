@@ -1,3 +1,4 @@
+console.clear();
 // initial commit Array Methods List
 // concat()
 // copyWithIn()
@@ -33,8 +34,18 @@
 const oldTags = ['Facebook', 'Twitter', 'LinkedIn', 'YouTube', 'Pinterest', 'Instagram', 'Tumblr', 'Flickr'];
 const newTags = ['YouTube', 'Pinterest', 'Instagram', 'Tumblr', 'Flickr', 'Facebook', 'Twitter', 'LinkedIn'];
 
-//Method 01: using .sort() | .join()
-const array_01 = oldTags.sort().join();
-const array_02 = newTags.sort().join();
-console.log('arrayEquals: ', array_01 === array_02); //true
+//Method 02: using .includes()
 
+let array_01_status = true;
+
+oldTags.forEach((value) => {
+  array_01_status = array_01_status && newTags.includes(value);
+});
+
+let array_02_status = true;
+
+newTags.forEach((value) => {
+  array_02_status = array_02_status && oldTags.includes(value);
+});
+
+console.log('arrayEquals: ', array_01_status && array_02_status); //  true
