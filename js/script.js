@@ -29,8 +29,8 @@ console.clear();
 // toString()
 // values()
 
-const myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-const result = myArray.at(-2);
-console.log(result); // 
+const myArray = ['x', 'y', 'z'];
+const result = myArray.concat('a');
+console.log(result); //  [ 'x', 'y', 'z', 'a' ]
 
 
