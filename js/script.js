@@ -31,11 +31,10 @@ console.clear();
 
 // Array Destructuring
 
-// Assigning the first values, sorting the rest together
+// Swapping variables
+let x = true;
+let y = false;
+[x, y] = [y, x];
+console.log(x); // false
+console.log(y); // true
 
-const [a, b, ...rest] = ['Hello!', 123, true, false, 456];
-console.log(a); // Hello!
-console.log(b); // 123
-console.log(rest); // [ true, false, 456 ]
-
-//Skipping items
