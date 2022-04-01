@@ -34,18 +34,16 @@ console.clear();
 const oldTags = ['Facebook', 'Twitter', 'LinkedIn', 'YouTube', 'Pinterest', 'Instagram', 'Tumblr', 'Flickr'];
 const newTags = ['YouTube', 'Pinterest', 'Instagram', 'Tumblr', 'Flickr', 'Facebook', 'Twitter', 'LinkedIn'];
 
-//Method 02: using .includes()
+//Method 03: using .includes()
 
-let array_01_status = true;
+let array_01_status = oldTags.reduce(
+  (acc, value) =>  acc && newTags.includes(value), 
+  true
+);
 
-oldTags.forEach((value) => {
-  array_01_status = array_01_status && newTags.includes(value);
-});
+let array_02_status = newTags.reduce(
+  (acc, value) => acc && oldTags.includes(value), 
+  true
+);
 
-let array_02_status = true;
-
-newTags.forEach((value) => {
-  array_02_status = array_02_status && oldTags.includes(value);
-});
-
-console.log('arrayEquals: ', array_01_status && array_02_status); //  true
+console.log('arrayEquals: ', array_01_status && array_02_status); //true
