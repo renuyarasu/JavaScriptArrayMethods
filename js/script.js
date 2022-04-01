@@ -31,9 +31,16 @@ console.clear();
 
 // 4 ways to check if 'arrays' are equal
 
-const oldTags = ['Facebook', 'Twitter', 'LinkedIn', 'YouTube', 'Pinterest', 'Instagram', 'Tumblr', 'Flickr'];
-const newTags = ['YouTube', 'Pinterest', 'Instagram', 'Tumblr', 'Flickr', 'Facebook', 'Twitter', 'LinkedIn'];
+const oldNums = [1, 2, 3];
+const newNums = [1, 2, 3];
 
-//Method 04: using _.isEqual() form Lodash
+//Method 04: using .length ()
 
-console.log('arrayEquals: ', _.isEqual(oldTags.sort(), newTags.sort())); //true
+function arrayEquals(oldNums, newNums) {
+  return Array.isArray(oldNums) &&
+    Array.isArray(newNums) &&
+    oldNums.length === newNums.length &&
+    oldNums.every((value, index) => value === newNums[index]);
+}
+
+console.log(arrayEquals(oldNums, newNums));// true
