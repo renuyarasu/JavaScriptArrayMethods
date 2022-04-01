@@ -30,7 +30,7 @@ console.clear();
 // values()
 
 const myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-const result = myArray.find(num => num % 2 === 0);
-console.log(result); // 2
+const result = myArray.findIndex(num => num % 2 !== 0);
+console.log(result); // 0
 
 
