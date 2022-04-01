@@ -30,7 +30,7 @@ console.clear();
 // values()
 
 const myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-const result = myArray.reduce((acc, cur) => acc + cur);
-console.log(result); // 45
+const result = myArray.every(x => x < 10);
+console.log(result); // true
 
 
