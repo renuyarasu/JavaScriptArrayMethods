@@ -30,7 +30,7 @@ console.clear();
 // values()
 
 const myArray = ['x', 'y', 'z'];
-const result = myArray.slice(2);
-console.log(result); // [ 'z' ]
+const result = myArray.indexOf('z');
+console.log(result); // 2
 
 
