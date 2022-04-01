@@ -31,10 +31,11 @@ console.clear();
 
 // Array Destructuring
 
+// Assigning the first values, sorting the rest together
+
+const [a, b, ...rest] = ['Hello!', 123, true, false, 456];
+console.log(a); // Hello!
+console.log(b); // 123
+console.log(rest); // [ true, false, 456 ]
+
 //Skipping items
-
-const [, z] = ['Hello!', 123, true];
-console.log(z); // 123
-
-
-
