@@ -29,12 +29,8 @@ console.clear();
 // toString()
 // values()
 
-// Array Destructuring
+const result = [1, 2, 3, 4];
+result.push(5);
+console.log(result); //[ 1, 2, 3, 4, 5 ]
 
-// Swapping variables
-let x = true;
-let y = false;
-[x, y] = [y, x];
-console.log(x); // false
-console.log(y); // true
 
