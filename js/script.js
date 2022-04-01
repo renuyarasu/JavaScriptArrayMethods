@@ -31,9 +31,10 @@ console.clear();
 
 // Array Destructuring
 
-// Assign array items to variable
+//Skipping items
 
-const [x, y, z] = ['Hello!', 123, true];
-console.log(x); // Hello!
-console.log(y); // 123
-console.log(z); // true
+const [, z] = ['Hello!', 123, true];
+console.log(z); // 123
+
+
+
