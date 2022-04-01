@@ -30,7 +30,7 @@ console.clear();
 // values()
 
 const result = [1, 2, 3, 4];
-result.pop();
-console.log(result); //[ 1, 2, 3 ]
+result.shift();
+console.log(result); //[ 2, 3, 4 ]
 
 
