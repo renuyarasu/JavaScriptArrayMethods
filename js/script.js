@@ -30,7 +30,7 @@ console.clear();
 // values()
 
 const result = [1, 2, 3, 4];
-result.push(5);
-console.log(result); //[ 1, 2, 3, 4, 5 ]
+result.pop();
+console.log(result); //[ 1, 2, 3 ]
 
 
